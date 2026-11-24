@@ -1,0 +1,25 @@
+# .NET build output
+bin/
+obj/
+*_wpftmp.csproj
+
+# build.ps1 / build-installer.ps1 output (app exe, installer payload, setup .exe)
+build/
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.DotSettings.user
+
+# Code signing material — never commit
+*.pfx
+*.p12
+*.snk
+
+# OS cruft
+Thumbs.db
+Desktop.ini
+.DS_Store
