@@ -82,7 +82,7 @@
                           VirtualizingPanel.ScrollUnit="Pixel" ScrollViewer.CanContentScroll="True">
                 <ItemsControl.Template>
                     <ControlTemplate TargetType="ItemsControl">
-                        <ScrollViewer x:Name="Scroller" Focusable="False" CanContentScroll="True"
+                        <ScrollViewer x:Name="Scroller" Focusable="False" CanContentScroll="True" local:SmoothScroll.IsEnabled="True"
                                       HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
                             <ItemsPresenter />
                         </ScrollViewer>

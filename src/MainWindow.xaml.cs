@@ -198,7 +198,7 @@ public partial class MainWindow : Window
 
     void ScrollToTop()
     {
-        if (Thumbs.Template?.FindName("Scroller", Thumbs) is ScrollViewer sv) sv.ScrollToTop();
+        if (Thumbs.Template?.FindName("Scroller", Thumbs) is ScrollViewer sv) { SmoothScroll.Stop(sv); sv.ScrollToTop(); }
     }
 
     static string MonthName(int m) => CultureInfo.CurrentCulture.DateTimeFormat.MonthNames[m - 1];
