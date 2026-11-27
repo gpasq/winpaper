@@ -15,7 +15,7 @@ Building requires the .NET SDK 8 or newer (`scoop install dotnet-sdk` or `winget
 
 The installer bundles the .NET runtime, so the target PC doesn't need .NET. It installs per-user into `%LOCALAPPDATA%\Programs\Paperboy` with no admin prompt. It adds a Start menu shortcut and an optional "Launch Paperboy when I sign in" checkbox, and shows up in Settings → Apps for uninstalling. Uninstalling removes the login item and the app's settings, but leaves downloaded images in `Pictures\Paperboy`. Building it requires Inno Setup 6.3+ (`scoop install extras/inno-setup`). The version comes from `<Version>` in `Paperboy.csproj`.
 
-Silent install: `Paperboy-1.0.0-arm64-setup.exe /VERYSILENT /TASKS=startup` (leave out `/TASKS=startup` to skip the login item).
+Silent install: `Paperboy-1.0.1-arm64-setup.exe /VERYSILENT /TASKS=startup` (leave out `/TASKS=startup` to skip the login item).
 
 ## Using it
 

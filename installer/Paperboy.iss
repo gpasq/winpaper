@@ -2,7 +2,7 @@
 ; AppVersion and PayloadDir on the command line.
 
 #ifndef AppVersion
-  #define AppVersion "1.0.0"
+  #define AppVersion "1.0.1"
 #endif
 #ifndef PayloadDir
   #define PayloadDir "..\build\installer-payload"
